@@ -1,0 +1,19 @@
+name = "rgn"
+main = "src/worker.js"
+compatibility_date = "2026-01-20"
+preview_urls = false
+
+[vars]
+UUID = "de6d1f5d-a660-4451-bf09-3fe059eb005e"
+PROXYIP = "[2602:fc59:b0:64::6810:0]"
+REGION = "apac"
+BESTIP = "cf.877774.xyz"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["WsDo"]
+
+[durable_objects]
+	bindings = [
+		{ class_name = "WsDo", name = "WS_DO" }
+	]
